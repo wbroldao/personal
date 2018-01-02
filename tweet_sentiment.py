@@ -3,7 +3,7 @@
 """
 Created on Tue Jan  2 10:30:21 2018
 
-@author: wbroldao
+@author: nito
 """
 
 import re
@@ -98,7 +98,7 @@ def main():
 	# creating object of TwitterClient Class
 	api = TwitterClient()
 	# calling function to get tweets
-	tweets = api.get_tweets(query = 'Cristiano Ronaldo', count = 10000000)
+	tweets = api.get_tweets(query = 'Jesus', count = 2)
 
 	# picking positive tweets from tweets
 	ptweets = [tweet for tweet in tweets if tweet['sentiment'] == 'positive']
